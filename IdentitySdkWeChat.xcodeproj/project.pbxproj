@@ -54,8 +54,8 @@
 		2A3398222B154AAD00EA56A4 /* IdentitySdkWeChat */ = {
 			isa = PBXGroup;
 			children = (
-				2A33986D2B155B9A00EA56A4 /* Classes */,
 				2A3398232B154AAD00EA56A4 /* IdentitySdkWeChat.h */,
+				2A33986D2B155B9A00EA56A4 /* Classes */,
 			);
 			path = IdentitySdkWeChat;
 			sourceTree = "<group>";

@@ -3,13 +3,13 @@ PODS:
   - BrightFutures (8.2.0)
   - CryptoSwift (1.8.0)
   - DeviceKit (5.1.0)
-  - IdentitySdkCore (5.9.0):
+  - IdentitySdkCore (6.0.0):
     - Alamofire (~> 5.8)
     - BrightFutures (~> 8.2.0)
     - CryptoSwift (~> 1.8)
     - DeviceKit (~> 5.1)
-  - IdentitySdkWeChat (5.9.0):
-    - IdentitySdkCore (~> 5)
+  - IdentitySdkWeChat (6.0.0):
+    - IdentitySdkCore (~> 6)
     - WechatSwiftPod (~> 1)
   - WechatSwiftPod (1.9.2.1)
 
@@ -36,8 +36,8 @@ SPEC CHECKSUMS:
   BrightFutures: 67e0e8cd974ab9f6c04650cc64153f7adf1ec489
   CryptoSwift: 52aaf3fce7337552863b1d952e408085f0e65030
   DeviceKit: bcce5c26d9502e77e3a9fa5d1282877db388d922
-  IdentitySdkCore: 1b54462b3fdd028db93e30145978e53398cf6164
-  IdentitySdkWeChat: 3817bd6d07fa0bf871e0b02aec93382d97c5eb9e
+  IdentitySdkCore: 32c2a9f65d9ea3202ca75c3857c886d5c6640e92
+  IdentitySdkWeChat: 423a3ab8833bdaa04e95c95e90e9883e15279343
   WechatSwiftPod: cc83e0f2ce9d310eb277d4309c948fc3532be57a
 
 PODFILE CHECKSUM: 69edf123cb7ced1a0bc28c04fa1ede9df0aabed9

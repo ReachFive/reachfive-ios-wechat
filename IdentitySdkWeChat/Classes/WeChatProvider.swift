@@ -37,6 +37,8 @@ public class ConfiguredWeChatProvider: NSObject, Provider {
     var scope: [String]?
     var promise: Promise<AuthToken, ReachFiveError>
     
+    var isRegistered: Bool = false
+    
     public init(sdkConfig: SdkConfig, providerConfig: ProviderConfig, reachFiveApi: ReachFiveApi, clientConfigResponse: ClientConfigResponse) {
         self.sdkConfig = sdkConfig
         self.providerConfig = providerConfig
@@ -52,12 +54,15 @@ public class ConfiguredWeChatProvider: NSObject, Provider {
         origin: String,
         viewController: UIViewController?
     ) -> Future<AuthToken, ReachFiveError> {
-        promise = Promise()
         guard WXApi.isWXAppInstalled() else {
-            promise.failure(.RequestError(apiError: ApiError(errorUserMsg: "WeChat is not installed", errorMessageKey: "error.provider.wechat.notInstalled")))
-            return promise.future
+            return Future(error: .RequestError(apiError: ApiError(errorUserMsg: "WeChat is not installed", errorMessageKey: "error.provider.wechat.notInstalled")))
         }
         
+        guard isRegistered else {
+            return Future(error: .TechnicalError(reason: "WeChat has not been registered properly. Please verify your configuration in the Reach5 Console"))
+        }
+        
+        promise = Promise()
         self.origin = origin
         self.scope = scope
         
@@ -72,16 +77,12 @@ public class ConfiguredWeChatProvider: NSObject, Provider {
     }
     
     public func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey: Any]) -> Bool {
-        return WXApi.handleOpen(url, delegate: self)
-    }
-    
-    public func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
-        return true
+        WXApi.handleOpen(url, delegate: self)
     }
     
     public func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         if let clientId = providerConfig.clientId, let link = providerConfig.universalLink {
-            let registerApp = WXApi.registerApp(clientId, universalLink: link)
+            isRegistered = WXApi.registerApp(clientId, universalLink: link)
         }
         
         return true
@@ -91,11 +92,11 @@ public class ConfiguredWeChatProvider: NSObject, Provider {
     }
     
     public func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) -> Bool {
-        return WXApi.handleOpenUniversalLink(userActivity, delegate: self)
+        WXApi.handleOpenUniversalLink(userActivity, delegate: self)
     }
     
     public func logout() -> Future<(), ReachFiveError> {
-        return Future(value: ())
+        Future(value: ())
     }
     
     public override var description: String {
@@ -129,6 +130,8 @@ extension ConfiguredWeChatProvider: WXApiDelegate {
                     .loginWithProvider(loginProviderRequest: loginProviderRequest)
                     .flatMap({ AuthToken.fromOpenIdTokenResponseFuture($0) })
             )
+        } else {
+            self.promise.failure(.TechnicalError(reason: "Unexpected WeChat response:\n\(resp)"))
         }
     }
 }
