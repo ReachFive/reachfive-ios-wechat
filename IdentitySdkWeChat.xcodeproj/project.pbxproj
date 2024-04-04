@@ -16,6 +16,7 @@
 		2A3398202B154AAD00EA56A4 /* IdentitySdkWeChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IdentitySdkWeChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A3398232B154AAD00EA56A4 /* IdentitySdkWeChat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IdentitySdkWeChat.h; sourceTree = "<group>"; };
 		2A33986E2B155BC400EA56A4 /* WeChatProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeChatProvider.swift; sourceTree = "<group>"; };
+		2AA7C7992BB74C6500BEA7EA /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		92469EAE495FB425F4ECD3EC /* Pods-IdentitySdkWeChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IdentitySdkWeChat.release.xcconfig"; path = "Target Support Files/Pods-IdentitySdkWeChat/Pods-IdentitySdkWeChat.release.xcconfig"; sourceTree = "<group>"; };
 		C1E8211B6459285F08D438E3 /* Pods_IdentitySdkWeChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IdentitySdkWeChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F18E32DEB4E4B4A62E5D5561 /* Pods-IdentitySdkWeChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IdentitySdkWeChat.debug.xcconfig"; path = "Target Support Files/Pods-IdentitySdkWeChat/Pods-IdentitySdkWeChat.debug.xcconfig"; sourceTree = "<group>"; };
@@ -55,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				2A3398232B154AAD00EA56A4 /* IdentitySdkWeChat.h */,
+				2AA7C7992BB74C6500BEA7EA /* PrivacyInfo.xcprivacy */,
 				2A33986D2B155B9A00EA56A4 /* Classes */,
 			);
 			path = IdentitySdkWeChat;
