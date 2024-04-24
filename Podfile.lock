@@ -1,14 +1,14 @@
 PODS:
-  - Alamofire (5.8.1)
+  - Alamofire (5.9.1)
   - BrightFutures (8.2.0)
-  - CryptoSwift (1.8.1)
-  - DeviceKit (5.2.1)
-  - IdentitySdkCore (6.1.0):
+  - CryptoSwift (1.8.2)
+  - DeviceKit (5.2.3)
+  - IdentitySdkCore (6.2.0):
     - Alamofire (~> 5.8)
     - BrightFutures (~> 8.2.0)
     - CryptoSwift (~> 1.8)
     - DeviceKit (~> 5.1)
-  - IdentitySdkWeChat (6.1.0):
+  - IdentitySdkWeChat (6.2.0):
     - IdentitySdkCore (~> 6)
     - WechatSwiftPod (~> 1)
   - WechatSwiftPod (1.9.2.1)
@@ -32,12 +32,12 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Alamofire: 3ca42e259043ee0dc5c0cdd76c4bc568b8e42af7
+  Alamofire: f36a35757af4587d8e4f4bfa223ad10be2422b8c
   BrightFutures: 67e0e8cd974ab9f6c04650cc64153f7adf1ec489
-  CryptoSwift: b9c701d6f5011df23794dbf7f2e480a77835d83d
-  DeviceKit: db421de2378e21644799766b98dc3d2c96f5d3bf
-  IdentitySdkCore: 91f854ad2b1f06d9ccf3d850818929328fbf5f87
-  IdentitySdkWeChat: 3cc95f623ade7727e1be4540849af134769b008c
+  CryptoSwift: c63a805d8bb5e5538e88af4e44bb537776af11ea
+  DeviceKit: 4504e64df8f8ad1c42aae68f30ece5b51d56022a
+  IdentitySdkCore: c7fcd8336521bfb1152f13338580aa9dca145b84
+  IdentitySdkWeChat: ea56ba7153aa677e94344edab91e125b59b898fe
   WechatSwiftPod: cc83e0f2ce9d310eb277d4309c948fc3532be57a
 
 PODFILE CHECKSUM: 69edf123cb7ced1a0bc28c04fa1ede9df0aabed9
