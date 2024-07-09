@@ -37,3 +37,8 @@ DerivedData/
 # End of https://www.gitignore.io/api/xcode
 
 Pods
+
+.DS_Store
+.idea/
+*.iml
+.vscode

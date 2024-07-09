@@ -1,0 +1,130 @@
+# iOS CircleCI 2.0 configuration file
+# https://circleci.com/docs/configuration-reference/
+#
+# For XCode build version available
+# https://circleci.com/docs/using-macos/
+#
+version: 2.1
+jobs:
+  build:
+    macos:
+      xcode: "15.3.0"
+    steps:
+      - checkout
+      - run:
+          name: Install CocoaPods
+          command: gem install cocoapods --user-install
+      - run:
+          name: Check IdentitySdkCore
+          command: |
+            cd IdentitySdkCore
+            pod install
+            cd ../
+            pod lib lint IdentitySdkCore.podspec
+      - run:
+          name: Check IdentitySdkFacebook
+          command: |
+            cd IdentitySdkFacebook
+            pod install
+            cd ../
+            pod lib lint IdentitySdkFacebook.podspec
+      - run:
+          name: Check IdentitySdkGoogle
+          command: |
+            cd IdentitySdkGoogle
+            pod install
+            cd ../
+            pod lib lint IdentitySdkGoogle.podspec
+      - run:
+          name: Check IdentitySdkWeChat
+          command: |
+            cd IdentitySdkWeChat
+            pod install
+            cd ../
+            pod lib lint IdentitySdkWeChat.podspec
+  build-for-release:
+    macos:
+      xcode: "15.3.0"
+    steps:
+      - checkout
+      - run:
+          name: Install CocoaPods
+          command: gem install cocoapods --user-install
+      - run:
+          name: Check IdentitySdkCore
+          command: |
+            cd IdentitySdkCore
+            pod install
+            cd ../
+            pod spec lint IdentitySdkCore.podspec
+      - run:
+          name: Check IdentitySdkFacebook
+          command: |
+            cd IdentitySdkFacebook
+            pod install
+            cd ../
+            pod spec lint IdentitySdkFacebook.podspec
+      - run:
+          name: Check IdentitySdkGoogle
+          command: |
+            cd IdentitySdkGoogle
+            pod install
+            cd ../
+            pod spec lint IdentitySdkGoogle.podspec
+      - run:
+          name: Check IdentitySdkWeChat
+          command: |
+            cd IdentitySdkWeChat
+            pod install
+            cd ../
+            pod spec lint IdentitySdkWeChat.podspec
+
+  publish:
+    macos:
+      xcode: "15.3.0"
+    steps:
+      - checkout
+      - run:
+          name: Install CocoaPods
+          command: gem install cocoapods --user-install
+      - run: pod trunk push IdentitySdkCore.podspec
+      - run: pod trunk push IdentitySdkFacebook.podspec
+      - run: pod trunk push IdentitySdkGoogle.podspec
+      - run: pod trunk push IdentitySdkWeChat.podspec
+  build-sandbox:
+    macos:
+      xcode: "15.3.0"
+    working_directory: ~/repo/Sandbox
+    steps:
+      - checkout:
+          path: ~/repo
+      - run:
+          name: Install CocoaPods
+          command: gem install cocoapods --user-install
+      - run: pod install
+      - run: fastlane scan
+
+default_workflows_filters: &default_workflows_filters
+  filters:
+    tags:
+      only: /.*/
+    branches:
+      ignore: /.*/
+
+default_workflows_tags: &default_workflows_tags
+  filters:
+    tags:
+      only: /.*/
+
+workflows:
+  version: 2
+  build-and-deploy:
+    jobs:
+      - build:
+          <<: *default_workflows_tags
+      - build-for-release:
+          <<: *default_workflows_filters
+      - publish:
+          requires:
+            - build-for-release
+          <<: *default_workflows_filters
