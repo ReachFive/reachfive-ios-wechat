@@ -7,39 +7,54 @@
 
 # ReachFive Identity iOS SDK
 
-## Cocoapods pods
-
-- [IdentitySdkCore](https://cocoapods.org/pods/IdentitySdkCore)
-- [IdentitySdkFacebook](https://cocoapods.org/pods/IdentitySdkFacebook)
-- [IdentitySdkGoogle](https://cocoapods.org/pods/IdentitySdkGoogle)
-- [IdentitySdkWeChat](https://cocoapods.org/pods/IdentitySdkWeChat)
-
 ## Installation
 
+### Cocoapods
+
+Add the following line to your **Podfile**:
+
+```
+pod 'IdentitySdkWeChat'
+```
+
+### Swift Package Manager
+Open the following menu item in Xcode:
+
+**File > Add Package Dependencies...**
+
+In the **Search or Enter Package URL** search box enter this URL:
+
+https://github.com/ReachFive/reachfive-ios-wechat.git
+
+Then, select the dependency rule and press **Add Package**.
+
+Or directly add it to the dependencies value of your Package.swift or the Package list in Xcode
+
+```swift
+dependencies: [
+    .package(url: "https://github.com/ReachFive/reachfive-ios-wechat.git", .upToNextMajor(from: "6.3.0"))
+]
+```
+
+## Usage
 Refer to the [public documentation](https://developer.reachfive.com/sdk-ios/index.html) to install the SDKs and to initialize your ReachFive client.
 
 The basics are:
-- Add this SDK to your project in your Cocoapods Podfile: 
 
+- Configuration:
 
-    pod 'IdentitySdkCore'
+```swift
+let reachfive: ReachFive = ReachFive(sdkConfig: sdkConfig, providersCreators: [WeChatProvider()])
+```
 
-- Configure the SDK:
+- Initialisation:
 
+Call this method (that makes a network call) inside the corresponding method of `UIApplicationDelegate`
 
-    let reachfive: ReachFive = ReachFive(sdkConfig: SdkConfig(domain: "DOMAIN", clientId: "CLIENT_ID"))
+```swift
+reachfive.application(application, didFinishLaunchingWithOptions: launchOptions)
+```
 
-- Initialize the SDK using this method (makes a network call) to be called inside the corresponding method of `UIApplicationDelegate`
-
-
-    reachfive.application(application, didFinishLaunchingWithOptions: launchOptions)
-
-
-## Demo application
-
-In addition to the libraries, we provide in the `Sandbox` directory a simple iOS application which integrates the ReachFive SDKs.
-
-To configure this demo application and learn how to use this SDK, refer to [contributing](CONTRIBUTING.md#running-the-demo-application)
 
 ## Documentation
 
@@ -48,10 +63,6 @@ You'll find the documentation of the methods exposed on https://developer.reachf
 ## Changelog
 
 Please refer to [changelog](CHANGELOG.md) to see the descriptions of each release.
-
-## Development
-
-Please refer to [contributing](CONTRIBUTING.md#development)
 
 ## License
 
