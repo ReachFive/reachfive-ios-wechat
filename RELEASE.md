@@ -2,17 +2,9 @@
 
 1. Create a branch with the name of the version `x.x.x`
 
-2. Change the version in `version.rb` file and in `ReachFiveApi`
+2. Change the version in `version.rb` file
 ```ruby
 $VERSION = 'x.x.x'
-```
-```swift
-let defaultParams: [String: String] = [
-    "platform": "ios",
-    // TODO: read from the version.rb. Either directly or indirectly from IdentitySdkCore.h, Info.plist...
-    "sdk": "x.x.x",
-    "device": deviceInfo,
-]
 ```
 
 3. Run `./update.sh` to update the dependencies

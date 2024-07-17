@@ -2,10 +2,10 @@
  <img src="https://www.reachfive.com/hubfs/5399904/Logo-ReachFive.svg" alt="Reach5 Logo" width="700" height="192"/>
 </p>
 
-[![CircleCI](https://circleci.com/gh/ReachFive/identity-ios-sdk/tree/master.svg?style=svg)](https://circleci.com/gh/ReachFive/identity-ios-sdk/tree/master)
-[![Download](https://img.shields.io/cocoapods/v/IdentitySdkCore.svg?style=flat) ](https://cocoapods.org/pods/IdentitySdkCore)
+[![CircleCI](https://circleci.com/gh/ReachFive/reachfive-ios-wechat/tree/master.svg?style=svg)](https://circleci.com/gh/ReachFive/reachfive-ios-wechat/tree/master)
+[![Download](https://img.shields.io/cocoapods/v/IdentitySdkWeChat.svg?style=flat) ](https://cocoapods.org/pods/IdentitySdkWeChat)
 
-# ReachFive Identity iOS SDK
+# ReachFive Identity iOS SDK for WeChat Login
 
 ## Installation
 
@@ -32,7 +32,7 @@ Or directly add it to the dependencies value of your Package.swift or the Packag
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/ReachFive/reachfive-ios-wechat.git", .upToNextMajor(from: "6.3.0"))
+    .package(url: "https://github.com/ReachFive/reachfive-ios-wechat.git", .upToNextMajor(from: "6.4.0"))
 ]
 ```
 
