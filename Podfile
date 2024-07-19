@@ -3,6 +3,6 @@ use_frameworks!
 platform :ios, '13.0'
 
 target 'IdentitySdkWeChat' do
-  pod 'IdentitySdkCore', :path => '../'
-  pod 'IdentitySdkWeChat', :path => '../'
+  pod 'IdentitySdkCore'
+  pod 'IdentitySdkWeChat', :path => 'IdentitySdkWeChat.podspec'
 end
