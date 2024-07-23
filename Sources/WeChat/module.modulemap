@@ -1,0 +1,5 @@
+module WeChat [system] {
+    header "Header.h"
+    link "Header"
+    export *
+}

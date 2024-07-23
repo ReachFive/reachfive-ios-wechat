@@ -22,7 +22,10 @@ Pod::Spec.new do |spec|
 
   spec.static_framework = true
 
+#   # Specify the vendored framework
+#   spec.vendored_frameworks = 'YourFramework.framework'
+
+
   spec.dependency 'Reach5'
-  spec.dependency 'WechatSwiftPod', '~> 1'
 
 end
