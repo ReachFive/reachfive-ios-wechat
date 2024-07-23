@@ -22,7 +22,7 @@ Pod::Spec.new do |spec|
 
   spec.static_framework = true
 
-  spec.dependency 'Reach5', '7.0.0.beta.2'
+  spec.dependency 'Reach5'
   spec.dependency 'WechatSwiftPod', '~> 1'
 
 end
