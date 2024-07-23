@@ -16,6 +16,9 @@ Pod::Spec.new do |spec|
   spec.source_files          = "IdentitySdkWeChat/**/*.*"
   spec.platform              = :ios
   spec.ios.deployment_target = $IOS_DEPLOYMENT_TARGET
+  spec.resource_bundle = {
+    'Reach5' => ['IdentitySdkWeChat/PrivacyInfo.xcprivacy']
+  }
 
   spec.static_framework = true
 

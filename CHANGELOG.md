@@ -13,7 +13,6 @@ to
 import Reach5WeChat
 ```
 
-## v6.2.0
 ### New features
 - Add privacy manifest.
 
