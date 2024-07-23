@@ -1,11 +1,11 @@
 require_relative './version'
 
 Pod::Spec.new do |spec|
-  spec.name                  = "IdentitySdkWeChat"
+  spec.name                  = "Reach5WeChat"
   spec.version               = $VERSION
-  spec.summary               = "ReachFive IdentitySdkWeChat"
+  spec.summary               = "Reachfive Identity SDK for WeChat Login"
   spec.description           = <<-DESC
-      ReachFive Identity Sdk WeChat
+      Reachfive Identity SDK for iOS integrating with WeChat Login
   DESC
   spec.homepage              = "https://github.com/ReachFive/reachfive-ios-wechat"
   spec.license               = { :type => "MIT", :file => "LICENSE" }
@@ -19,7 +19,7 @@ Pod::Spec.new do |spec|
 
   spec.static_framework = true
 
-  spec.dependency 'IdentitySdkCore'
+  spec.dependency 'Reach5'
   spec.dependency 'WechatSwiftPod', '~> 1'
 
 end

@@ -15,10 +15,10 @@ jobs:
           name: Install CocoaPods
           command: gem install cocoapods --user-install
       - run:
-          name: Check IdentitySdkWeChat
+          name: Check Reach5WeChat
           command: |
             pod install
-            pod lib lint IdentitySdkWeChat.podspec
+            pod lib lint Reach5WeChat.podspec
   build-for-release:
     macos:
       xcode: "15.3.0"
@@ -28,10 +28,10 @@ jobs:
           name: Install CocoaPods
           command: gem install cocoapods --user-install
       - run:
-          name: Check IdentitySdkWeChat
+          name: Check Reach5WeChat
           command: |
             pod install
-            pod spec lint IdentitySdkWeChat.podspec
+            pod spec lint Reach5WeChat.podspec
 
   publish:
     macos:
@@ -41,7 +41,7 @@ jobs:
       - run:
           name: Install CocoaPods
           command: gem install cocoapods --user-install
-      - run: pod trunk push IdentitySdkWeChat.podspec
+      - run: pod trunk push Reach5WeChat.podspec
 
 default_workflows_filters: &default_workflows_filters
   filters:

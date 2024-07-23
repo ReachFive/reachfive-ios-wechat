@@ -1,5 +1,5 @@
 import Foundation
-import IdentitySdkCore
+import Reach5
 import BrightFutures
 import WechatSwiftPod
 

@@ -7,9 +7,9 @@
 $VERSION = 'x.x.x'
 ```
 
-3. Run `./update.sh` to update the dependencies
+3. Run `pod update` to update the dependencies
 ```shell
-./update.sh
+pod update
 ```
 
 4. Update the `CHANGELOG.md` file
