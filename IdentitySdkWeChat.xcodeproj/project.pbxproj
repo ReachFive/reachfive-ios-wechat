@@ -110,6 +110,7 @@
 				2A33981C2B154AAD00EA56A4 /* Sources */,
 				2A33981D2B154AAD00EA56A4 /* Frameworks */,
 				2A33981E2B154AAD00EA56A4 /* Resources */,
+				794B4260148596DF0702801D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -164,6 +165,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		794B4260148596DF0702801D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IdentitySdkWeChat/Pods-IdentitySdkWeChat-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IdentitySdkWeChat/Pods-IdentitySdkWeChat-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IdentitySdkWeChat/Pods-IdentitySdkWeChat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		FAE350AE197B75A629B34ACD /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

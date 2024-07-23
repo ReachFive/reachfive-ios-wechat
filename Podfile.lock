@@ -3,19 +3,19 @@ PODS:
   - BrightFutures (8.2.0)
   - CryptoSwift (1.8.2)
   - DeviceKit (5.4.0)
-  - IdentitySdkCore (6.3.0):
+  - Reach5 (7.0.0.beta.2):
     - Alamofire (~> 5.8)
     - BrightFutures (~> 8.2.0)
     - CryptoSwift (~> 1.8)
     - DeviceKit (~> 5.1)
-  - IdentitySdkWeChat (6.4.0):
-    - IdentitySdkCore
+  - Reach5WeChat (7.0.0.beta.2):
+    - Reach5 (= 7.0.0.beta.2)
     - WechatSwiftPod (~> 1)
   - WechatSwiftPod (1.9.2.1)
 
 DEPENDENCIES:
-  - IdentitySdkCore
-  - IdentitySdkWeChat (from `IdentitySdkWeChat.podspec`)
+  - Reach5 (= 7.0.0.beta.2)
+  - Reach5WeChat (from `Reach5WeChat.podspec`)
 
 SPEC REPOS:
   trunk:
@@ -23,22 +23,22 @@ SPEC REPOS:
     - BrightFutures
     - CryptoSwift
     - DeviceKit
-    - IdentitySdkCore
+    - Reach5
     - WechatSwiftPod
 
 EXTERNAL SOURCES:
-  IdentitySdkWeChat:
-    :path: IdentitySdkWeChat.podspec
+  Reach5WeChat:
+    :path: Reach5WeChat.podspec
 
 SPEC CHECKSUMS:
   Alamofire: f36a35757af4587d8e4f4bfa223ad10be2422b8c
   BrightFutures: 67e0e8cd974ab9f6c04650cc64153f7adf1ec489
   CryptoSwift: c63a805d8bb5e5538e88af4e44bb537776af11ea
   DeviceKit: bd34bb1766d926c3cc5a5f6e3e9a6dd10148b805
-  IdentitySdkCore: e74e8f81ce688fac4365183376e3b26f62f06b5f
-  IdentitySdkWeChat: 84ef48d102904c049ea19354c17c9f21fa5c6879
+  Reach5: 898a1dfb36b65f8fbb6a6a9bd3f539f22918cb9b
+  Reach5WeChat: 2f2d13bd53d541462542272b8fe86fc64da79d44
   WechatSwiftPod: cc83e0f2ce9d310eb277d4309c948fc3532be57a
 
-PODFILE CHECKSUM: de4bcd88bc9f5846e611c7a94eaeb93350304f7c
+PODFILE CHECKSUM: 0d6f004c971b3a5afa6ac38dd43b05e7d4ab1c9d
 
 COCOAPODS: 1.15.2
