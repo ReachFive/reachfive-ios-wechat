@@ -7,12 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A26C32E2C54250500147D34 /* WechatOpenSDK-XCFramework.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A26C32C2C5424B100147D34 /* WechatOpenSDK-XCFramework.xcframework */; };
+		2A26C32F2C54250500147D34 /* WechatOpenSDK-XCFramework.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2A26C32C2C5424B100147D34 /* WechatOpenSDK-XCFramework.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2A3398242B154AAD00EA56A4 /* IdentitySdkWeChat.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A3398232B154AAD00EA56A4 /* IdentitySdkWeChat.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2A33986F2B155BC400EA56A4 /* WeChatProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A33986E2B155BC400EA56A4 /* WeChatProvider.swift */; };
 		B0DB5B5F105FE5D066BC6D4B /* Pods_IdentitySdkWeChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1E8211B6459285F08D438E3 /* Pods_IdentitySdkWeChat.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		2A26C3302C54250500147D34 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2A26C32F2C54250500147D34 /* WechatOpenSDK-XCFramework.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		2A26C3262C541ED600147D34 /* WechatOpenSDK-XCFramework.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = "WechatOpenSDK-XCFramework.xcframework"; path = "../../Downloads/WechatOpenSDK-XCFramework.xcframework"; sourceTree = "<group>"; };
+		2A26C32C2C5424B100147D34 /* WechatOpenSDK-XCFramework.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = "WechatOpenSDK-XCFramework.xcframework"; path = "Sources/WechatOpenSDK-XCFramework.xcframework"; sourceTree = "<group>"; };
 		2A3398202B154AAD00EA56A4 /* IdentitySdkWeChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IdentitySdkWeChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A3398232B154AAD00EA56A4 /* IdentitySdkWeChat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IdentitySdkWeChat.h; sourceTree = "<group>"; };
 		2A33986E2B155BC400EA56A4 /* WeChatProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeChatProvider.swift; sourceTree = "<group>"; };
@@ -27,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A26C32E2C54250500147D34 /* WechatOpenSDK-XCFramework.xcframework in Frameworks */,
 				B0DB5B5F105FE5D066BC6D4B /* Pods_IdentitySdkWeChat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -34,9 +53,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A26C32B2C54223D00147D34 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
 		2A3398162B154AAD00EA56A4 = {
 			isa = PBXGroup;
 			children = (
+				2A26C32B2C54223D00147D34 /* Sources */,
 				2A3398222B154AAD00EA56A4 /* IdentitySdkWeChat */,
 				2A3398212B154AAD00EA56A4 /* Products */,
 				5038865880CA0BBA85D4F6B2 /* Pods */,
@@ -82,6 +109,8 @@
 		A447F7B43FF43974D83DF715 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2A26C3262C541ED600147D34 /* WechatOpenSDK-XCFramework.xcframework */,
+				2A26C32C2C5424B100147D34 /* WechatOpenSDK-XCFramework.xcframework */,
 				C1E8211B6459285F08D438E3 /* Pods_IdentitySdkWeChat.framework */,
 			);
 			name = Frameworks;
@@ -111,6 +140,7 @@
 				2A33981D2B154AAD00EA56A4 /* Frameworks */,
 				2A33981E2B154AAD00EA56A4 /* Resources */,
 				794B4260148596DF0702801D /* [CP] Copy Pods Resources */,
+				2A26C3302C54250500147D34 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

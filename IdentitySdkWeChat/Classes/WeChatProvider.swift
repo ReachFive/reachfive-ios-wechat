@@ -1,15 +1,20 @@
 import Foundation
 import Reach5
 import BrightFutures
-import WechatSwiftPod
+//#if canImport(WechatOpenSDK)
+import WXApi
+//#import <WXApi.h>
+//#else
+//import WechatSwiftPod
+//#endif
 
 public class WeChatProvider: ProviderCreator {
     public static var NAME: String = "wechat"
-    
+
     public var name: String = NAME
-    
+
     public init() {}
-    
+
     public func create(
         sdkConfig: SdkConfig,
         providerConfig: ProviderConfig,
@@ -27,7 +32,7 @@ public class WeChatProvider: ProviderCreator {
 
 public class ConfiguredWeChatProvider: NSObject, Provider {
     public var name: String = WeChatProvider.NAME
-    
+
     var sdkConfig: SdkConfig
     var providerConfig: ProviderConfig
     var reachFiveApi: ReachFiveApi
@@ -36,9 +41,9 @@ public class ConfiguredWeChatProvider: NSObject, Provider {
     var origin: String
     var scope: [String]?
     var promise: Promise<AuthToken, ReachFiveError>
-    
+
     var isRegistered: Bool = false
-    
+
     public init(sdkConfig: SdkConfig, providerConfig: ProviderConfig, reachFiveApi: ReachFiveApi, clientConfigResponse: ClientConfigResponse) {
         self.sdkConfig = sdkConfig
         self.providerConfig = providerConfig
@@ -48,7 +53,7 @@ public class ConfiguredWeChatProvider: NSObject, Provider {
         self.origin = ""
         self.promise = Promise()
     }
-    
+
     public func login(
         scope: [String]?,
         origin: String,
@@ -57,48 +62,48 @@ public class ConfiguredWeChatProvider: NSObject, Provider {
         guard WXApi.isWXAppInstalled() else {
             return Future(error: .RequestError(apiError: ApiError(errorUserMsg: "WeChat is not installed", errorMessageKey: "error.provider.wechat.notInstalled")))
         }
-        
+
         guard isRegistered else {
             return Future(error: .TechnicalError(reason: "WeChat has not been registered properly. Please verify your configuration in the Reach5 Console"))
         }
-        
+
         promise = Promise()
         self.origin = origin
         self.scope = scope
-        
+
         state = Pkce.generate().codeVerifier
-        
+
         let req = SendAuthReq()
         req.scope = "snsapi_userinfo"
         req.state = state
         WXApi.send(req)
-        
+
         return promise.future
     }
-    
+
     public func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey: Any]) -> Bool {
         WXApi.handleOpen(url, delegate: self)
     }
-    
+
     public func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         if let clientId = providerConfig.clientId, let link = providerConfig.universalLink {
             isRegistered = WXApi.registerApp(clientId, universalLink: link)
         }
-        
+
         return true
     }
-    
+
     public func applicationDidBecomeActive(_ application: UIApplication) {
     }
-    
+
     public func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) -> Bool {
         WXApi.handleOpenUniversalLink(userActivity, delegate: self)
     }
-    
+
     public func logout() -> Future<(), ReachFiveError> {
         Future(value: ())
     }
-    
+
     public override var description: String {
         "Provider: \(name)"
     }
@@ -115,7 +120,7 @@ extension ConfiguredWeChatProvider: WXApiDelegate {
                 self.promise.failure(.TechnicalError(reason: "Invalid state"))
                 return
             }
-            
+
             let loginProviderRequest = LoginProviderRequest(
                 provider: "\(self.providerConfig.provider):ios",
                 providerToken: nil,

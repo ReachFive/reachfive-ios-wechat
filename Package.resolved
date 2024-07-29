@@ -1,5 +1,5 @@
 {
-  "originHash" : "67473e51cfbd4111e77143a684b7ec3efb871d7a2ece25c2e1224667d32bc0d2",
+  "originHash" : "d3bc9dfa4bcde9662f0eefba0aa918700dfe5139696801d8722da6d741e18a22",
   "pins" : [
     {
       "identity" : "alamofire",
@@ -43,7 +43,7 @@
       "location" : "https://github.com/ReachFive/reachfive-ios.git",
       "state" : {
         "branch" : "7.0.0",
-        "revision" : "96317744a29d1d644c1b819579d9d4b05958318a"
+        "revision" : "3b2be86a8d2a8358842ed9d9299a28d0bdd69ac1"
       }
     },
     {
