@@ -3,18 +3,18 @@ PODS:
   - BrightFutures (8.2.0)
   - CryptoSwift (1.8.2)
   - DeviceKit (5.4.0)
-  - Reach5 (7.0.0.beta.2):
+  - Reach5 (7.0.0):
     - Alamofire (~> 5.8)
     - BrightFutures (~> 8.2.0)
     - CryptoSwift (~> 1.8)
     - DeviceKit (~> 5.1)
-  - Reach5WeChat (7.0.0.beta.2):
-    - Reach5 (= 7.0.0.beta.2)
+  - Reach5WeChat (7.0.0):
+    - Reach5
     - WechatSwiftPod (~> 1)
   - WechatSwiftPod (1.9.2.1)
 
 DEPENDENCIES:
-  - Reach5 (= 7.0.0.beta.2)
+  - Reach5 (from `https://github.com/ReachFive/reachfive-ios.git`, branch `7.0.0`)
   - Reach5WeChat (from `Reach5WeChat.podspec`)
 
 SPEC REPOS:
@@ -23,22 +23,29 @@ SPEC REPOS:
     - BrightFutures
     - CryptoSwift
     - DeviceKit
-    - Reach5
     - WechatSwiftPod
 
 EXTERNAL SOURCES:
+  Reach5:
+    :branch: 7.0.0
+    :git: https://github.com/ReachFive/reachfive-ios.git
   Reach5WeChat:
     :path: Reach5WeChat.podspec
+
+CHECKOUT OPTIONS:
+  Reach5:
+    :commit: 7425908308a97c55ac0f2a2f4f0018cc9025f205
+    :git: https://github.com/ReachFive/reachfive-ios.git
 
 SPEC CHECKSUMS:
   Alamofire: f36a35757af4587d8e4f4bfa223ad10be2422b8c
   BrightFutures: 67e0e8cd974ab9f6c04650cc64153f7adf1ec489
   CryptoSwift: c63a805d8bb5e5538e88af4e44bb537776af11ea
   DeviceKit: bd34bb1766d926c3cc5a5f6e3e9a6dd10148b805
-  Reach5: 898a1dfb36b65f8fbb6a6a9bd3f539f22918cb9b
-  Reach5WeChat: 2f2d13bd53d541462542272b8fe86fc64da79d44
+  Reach5: fc5fc1f69b9d5f03fa581bf13dee46fdde2e2815
+  Reach5WeChat: 86a73c04ca0ffe7f5002fff20be548c8c2c869c2
   WechatSwiftPod: cc83e0f2ce9d310eb277d4309c948fc3532be57a
 
-PODFILE CHECKSUM: 0d6f004c971b3a5afa6ac38dd43b05e7d4ab1c9d
+PODFILE CHECKSUM: fa6b6d7ecce85acf52a05b8a690c8a1c01fb9ee3
 
 COCOAPODS: 1.15.2
