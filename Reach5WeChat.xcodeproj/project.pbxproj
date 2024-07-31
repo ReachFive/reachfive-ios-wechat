@@ -37,7 +37,7 @@
 		2A3398162B154AAD00EA56A4 = {
 			isa = PBXGroup;
 			children = (
-				2A3398222B154AAD00EA56A4 /* IdentitySdkWeChat */,
+				2A3398222B154AAD00EA56A4 /* Sources */,
 				2A3398212B154AAD00EA56A4 /* Products */,
 				5038865880CA0BBA85D4F6B2 /* Pods */,
 				A447F7B43FF43974D83DF715 /* Frameworks */,
@@ -52,14 +52,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2A3398222B154AAD00EA56A4 /* IdentitySdkWeChat */ = {
+		2A3398222B154AAD00EA56A4 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
 				2A3398232B154AAD00EA56A4 /* IdentitySdkWeChat.h */,
 				2AA7C7992BB74C6500BEA7EA /* PrivacyInfo.xcprivacy */,
 				2A33986D2B155B9A00EA56A4 /* Classes */,
 			);
-			path = IdentitySdkWeChat;
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		2A33986D2B155B9A00EA56A4 /* Classes */ = {

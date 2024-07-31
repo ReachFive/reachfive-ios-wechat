@@ -20,7 +20,6 @@ let package = Package(
                 .product(name: "Reach5", package: "reachfive-ios"),
                 .product(name: "WechatOpenSDK", package: "WechatOpenSDK"),
             ],
-            path: "IdentitySdkWeChat",
             resources: [
               .copy("PrivacyInfo.xcprivacy")
             ]
