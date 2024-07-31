@@ -2,7 +2,7 @@ import Foundation
 import UIKit
 import Reach5
 import BrightFutures
-//import WechatSwiftPod
+import WechatSwiftPod
 
 public class WeChatProvider: ProviderCreator {
     public static var NAME: String = "wechat"
@@ -55,11 +55,9 @@ public class ConfiguredWeChatProvider: NSObject, Provider {
         origin: String,
         viewController: UIViewController?
     ) -> Future<AuthToken, ReachFiveError> {
-/*
         guard WXApi.isWXAppInstalled() else {
             return Future(error: .RequestError(apiError: ApiError(errorUserMsg: "WeChat is not installed", errorMessageKey: "error.provider.wechat.notInstalled")))
         }
-*/
 
         guard isRegistered else {
             return Future(error: .TechnicalError(reason: "WeChat has not been registered properly. Please verify your configuration in the Reach5 Console"))
@@ -71,24 +69,21 @@ public class ConfiguredWeChatProvider: NSObject, Provider {
 
         state = Pkce.generate().codeVerifier
 
-/*
         let req = SendAuthReq()
         req.scope = "snsapi_userinfo"
         req.state = state
         WXApi.send(req)
-*/
 
         return promise.future
     }
 
     public func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey: Any]) -> Bool {
-    return true
-//        WXApi.handleOpen(url, delegate: self)
+        WXApi.handleOpen(url, delegate: self)
     }
 
     public func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         if let clientId = providerConfig.clientId, let link = providerConfig.universalLink {
-//            isRegistered = WXApi.registerApp(clientId, universalLink: link)
+            isRegistered = WXApi.registerApp(clientId, universalLink: link)
         }
 
         return true
@@ -98,9 +93,7 @@ public class ConfiguredWeChatProvider: NSObject, Provider {
     }
 
     public func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) -> Bool {
-        return true
-
-//        WXApi.handleOpenUniversalLink(userActivity, delegate: self)
+        WXApi.handleOpenUniversalLink(userActivity, delegate: self)
     }
 
     public func logout() -> Future<(), ReachFiveError> {
@@ -112,7 +105,6 @@ public class ConfiguredWeChatProvider: NSObject, Provider {
     }
 }
 
-/*
 extension ConfiguredWeChatProvider: WXApiDelegate {
     open func onResp(_ resp: BaseResp) {
         if let authResp = resp as? SendAuthResp {
@@ -144,4 +136,3 @@ extension ConfiguredWeChatProvider: WXApiDelegate {
         }
     }
 }
-*/
