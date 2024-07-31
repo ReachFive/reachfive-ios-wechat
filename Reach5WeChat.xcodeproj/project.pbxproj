@@ -13,7 +13,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2A3398202B154AAD00EA56A4 /* IdentitySdkWeChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IdentitySdkWeChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A3398202B154AAD00EA56A4 /* Reach5WeChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Reach5WeChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A3398232B154AAD00EA56A4 /* IdentitySdkWeChat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IdentitySdkWeChat.h; sourceTree = "<group>"; };
 		2A33986E2B155BC400EA56A4 /* WeChatProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeChatProvider.swift; sourceTree = "<group>"; };
 		2AA7C7992BB74C6500BEA7EA /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
@@ -47,7 +47,7 @@
 		2A3398212B154AAD00EA56A4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2A3398202B154AAD00EA56A4 /* IdentitySdkWeChat.framework */,
+				2A3398202B154AAD00EA56A4 /* Reach5WeChat.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,9 +101,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		2A33981F2B154AAD00EA56A4 /* IdentitySdkWeChat */ = {
+		2A33981F2B154AAD00EA56A4 /* Reach5WeChat */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2A3398272B154AAD00EA56A4 /* Build configuration list for PBXNativeTarget "IdentitySdkWeChat" */;
+			buildConfigurationList = 2A3398272B154AAD00EA56A4 /* Build configuration list for PBXNativeTarget "Reach5WeChat" */;
 			buildPhases = (
 				FAE350AE197B75A629B34ACD /* [CP] Check Pods Manifest.lock */,
 				2A33981B2B154AAD00EA56A4 /* Headers */,
@@ -116,9 +116,9 @@
 			);
 			dependencies = (
 			);
-			name = IdentitySdkWeChat;
+			name = Reach5WeChat;
 			productName = IdentitySdkWeChat;
-			productReference = 2A3398202B154AAD00EA56A4 /* IdentitySdkWeChat.framework */;
+			productReference = 2A3398202B154AAD00EA56A4 /* Reach5WeChat.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -136,7 +136,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2A33981A2B154AAD00EA56A4 /* Build configuration list for PBXProject "IdentitySdkWeChat" */;
+			buildConfigurationList = 2A33981A2B154AAD00EA56A4 /* Build configuration list for PBXProject "Reach5WeChat" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -149,7 +149,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2A33981F2B154AAD00EA56A4 /* IdentitySdkWeChat */,
+				2A33981F2B154AAD00EA56A4 /* Reach5WeChat */,
 			);
 		};
 /* End PBXProject section */
@@ -415,7 +415,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2A33981A2B154AAD00EA56A4 /* Build configuration list for PBXProject "IdentitySdkWeChat" */ = {
+		2A33981A2B154AAD00EA56A4 /* Build configuration list for PBXProject "Reach5WeChat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2A3398252B154AAD00EA56A4 /* Debug */,
@@ -424,7 +424,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2A3398272B154AAD00EA56A4 /* Build configuration list for PBXNativeTarget "IdentitySdkWeChat" */ = {
+		2A3398272B154AAD00EA56A4 /* Build configuration list for PBXNativeTarget "Reach5WeChat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2A3398282B154AAD00EA56A4 /* Debug */,
