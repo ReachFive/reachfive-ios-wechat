@@ -82,6 +82,7 @@ public class ConfiguredWeChatProvider: NSObject, Provider {
     }
 
     public func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey: Any]) -> Bool {
+    return true
 //        WXApi.handleOpen(url, delegate: self)
     }
 
@@ -97,6 +98,8 @@ public class ConfiguredWeChatProvider: NSObject, Provider {
     }
 
     public func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) -> Bool {
+        return true
+
 //        WXApi.handleOpenUniversalLink(userActivity, delegate: self)
     }
 
