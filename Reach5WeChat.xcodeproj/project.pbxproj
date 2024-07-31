@@ -117,7 +117,7 @@
 			dependencies = (
 			);
 			name = Reach5WeChat;
-			productName = IdentitySdkWeChat;
+			productName = Reach5WeChat;
 			productReference = 2A3398202B154AAD00EA56A4 /* Reach5WeChat.framework */;
 			productType = "com.apple.product-type.framework";
 		};

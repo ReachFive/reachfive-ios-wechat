@@ -43,7 +43,7 @@ SPEC CHECKSUMS:
   CryptoSwift: c63a805d8bb5e5538e88af4e44bb537776af11ea
   DeviceKit: bd34bb1766d926c3cc5a5f6e3e9a6dd10148b805
   Reach5: fc5fc1f69b9d5f03fa581bf13dee46fdde2e2815
-  Reach5WeChat: 86a73c04ca0ffe7f5002fff20be548c8c2c869c2
+  Reach5WeChat: efb0ede11a841ddc1b8681364dd685fb194851ce
   WechatSwiftPod: cc83e0f2ce9d310eb277d4309c948fc3532be57a
 
 PODFILE CHECKSUM: fa6b6d7ecce85acf52a05b8a690c8a1c01fb9ee3
