@@ -1,12 +1,8 @@
 import Foundation
+import UIKit
 import Reach5
 import BrightFutures
-//#if canImport(WechatOpenSDK)
-import WXApi
-//#import <WXApi.h>
-//#else
-//import WechatSwiftPod
-//#endif
+import WechatSDK
 
 public class WeChatProvider: ProviderCreator {
     public static var NAME: String = "wechat"

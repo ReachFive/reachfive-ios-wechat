@@ -34,6 +34,8 @@
 		2A3398202B154AAD00EA56A4 /* IdentitySdkWeChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IdentitySdkWeChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A3398232B154AAD00EA56A4 /* IdentitySdkWeChat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IdentitySdkWeChat.h; sourceTree = "<group>"; };
 		2A33986E2B155BC400EA56A4 /* WeChatProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeChatProvider.swift; sourceTree = "<group>"; };
+		2A5DC59F2C6192A700591809 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		2A5DC5A02C6192C900591809 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 		2AA7C7992BB74C6500BEA7EA /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		92469EAE495FB425F4ECD3EC /* Pods-IdentitySdkWeChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IdentitySdkWeChat.release.xcconfig"; path = "Target Support Files/Pods-IdentitySdkWeChat/Pods-IdentitySdkWeChat.release.xcconfig"; sourceTree = "<group>"; };
 		C1E8211B6459285F08D438E3 /* Pods_IdentitySdkWeChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IdentitySdkWeChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,6 +84,7 @@
 		2A3398222B154AAD00EA56A4 /* IdentitySdkWeChat */ = {
 			isa = PBXGroup;
 			children = (
+				2A5DC59E2C61927300591809 /* WechatSDK */,
 				2A3398232B154AAD00EA56A4 /* IdentitySdkWeChat.h */,
 				2AA7C7992BB74C6500BEA7EA /* PrivacyInfo.xcprivacy */,
 				2A33986D2B155B9A00EA56A4 /* Classes */,
@@ -95,6 +98,15 @@
 				2A33986E2B155BC400EA56A4 /* WeChatProvider.swift */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		2A5DC59E2C61927300591809 /* WechatSDK */ = {
+			isa = PBXGroup;
+			children = (
+				2A5DC59F2C6192A700591809 /* Header.h */,
+				2A5DC5A02C6192C900591809 /* module.modulemap */,
+			);
+			path = WechatSDK;
 			sourceTree = "<group>";
 		};
 		5038865880CA0BBA85D4F6B2 /* Pods */ = {

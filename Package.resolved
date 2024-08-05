@@ -1,5 +1,5 @@
 {
-  "originHash" : "d3bc9dfa4bcde9662f0eefba0aa918700dfe5139696801d8722da6d741e18a22",
+  "originHash" : "6905912fde171b8ba93ab7a73fc4d72761be6dc43174913cf78f317349c46c99",
   "pins" : [
     {
       "identity" : "alamofire",
@@ -24,8 +24,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/krzyzanowskim/CryptoSwift.git",
       "state" : {
-        "revision" : "c9c3df6ab812de32bae61fc0cd1bf6d45170ebf0",
-        "version" : "1.8.2"
+        "revision" : "678d442c6f7828def400a70ae15968aef67ef52d",
+        "version" : "1.8.3"
       }
     },
     {
@@ -42,17 +42,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/ReachFive/reachfive-ios.git",
       "state" : {
-        "branch" : "7.0.0",
-        "revision" : "3b2be86a8d2a8358842ed9d9299a28d0bdd69ac1"
-      }
-    },
-    {
-      "identity" : "wechatopensdk",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/yanyin1986/WechatOpenSDK.git",
-      "state" : {
-        "revision" : "07d37db666076d9ec6b85ca935e5bcdb68af43bd",
-        "version" : "2.0.4"
+        "revision" : "106a5f40f178489e4ef722aac5a66bf91ece1c32",
+        "version" : "7.0.0"
       }
     }
   ],
