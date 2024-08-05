@@ -78,6 +78,12 @@ public class ConfiguredWeChatProvider: NSObject, Provider {
     }
 
     public func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey: Any]) -> Bool {
+        //  peut-être ne pas envoyer toutes les URL à WeChat selon le modèle https://github.com/William-Weng/WWSignInWith3rd_Wechat/blob/d903e0d69f94555ebe99231fcfeee5f9232033d6/Sources/WWSignInWith3rd_Wechat/WWSignInWith3rd_Wechat.swift#L123
+//        guard let appid,
+//                     url.absoluteString.contains(appid)
+//               else {
+//                   return true
+//               }
         WXApi.handleOpen(url, delegate: self)
     }
 
@@ -108,6 +114,7 @@ public class ConfiguredWeChatProvider: NSObject, Provider {
 extension ConfiguredWeChatProvider: WXApiDelegate {
     open func onResp(_ resp: BaseResp) {
         if let authResp = resp as? SendAuthResp {
+            // Vérification de response.errStr.isEmpty https://github.com/William-Weng/WWSignInWith3rd_Wechat/blob/d903e0d69f94555ebe99231fcfeee5f9232033d6/Sources/WWSignInWith3rd_Wechat/WWSignInWith3rd_Wechat.swift#L159
             guard let code = authResp.code else {
                 self.promise.failure(.TechnicalError(reason: "No code delivered by WeChat"))
                 return
