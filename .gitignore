@@ -42,3 +42,4 @@ Pods
 .idea/
 *.iml
 .vscode
+.build

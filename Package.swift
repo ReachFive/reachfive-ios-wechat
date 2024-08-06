@@ -5,7 +5,7 @@ import PackageDescription
 
 let package = Package(
     name: "Reach5WeChat",
-    platforms: [.iOS(.v14)],
+    platforms: [.iOS(.v13)],
     products: [
         .library(name: "Reach5WeChat", targets: ["Reach5WeChat"]),
     ],
@@ -15,7 +15,7 @@ let package = Package(
 //        .package(url: "https://github.com/William-Weng/WWSignInWith3rd_Wechat.git", .upToNextMajor(from: "1.0.0"))
     ],
     targets: [
-        .binaryTarget(name: "WeChat", path: "Sources/WechatOpenSDK-XCFramework.xcframework"),
+//        .binaryTarget(name: "WeChat", path: "Sources/WechatOpenSDK-XCFramework.xcframework"),
         .target(
             name: "Reach5WeChat",
             dependencies: [
