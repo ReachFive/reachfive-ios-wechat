@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A02687D2C86124600510BB6 /* WechatOpenSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A02687C2C86124600510BB6 /* WechatOpenSDK.h */; };
 		2A3398242B154AAD00EA56A4 /* Reach5WeChat.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A3398232B154AAD00EA56A4 /* Reach5WeChat.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2A33986F2B155BC400EA56A4 /* WeChatProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A33986E2B155BC400EA56A4 /* WeChatProvider.swift */; };
 		5B98471E02F228425FA8F5D1 /* Pods_Reach5WeChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E691F2ADDE00880FB548BC3 /* Pods_Reach5WeChat.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2A02687C2C86124600510BB6 /* WechatOpenSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WechatOpenSDK.h; sourceTree = "<group>"; };
 		2A3398202B154AAD00EA56A4 /* Reach5WeChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Reach5WeChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A3398232B154AAD00EA56A4 /* Reach5WeChat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Reach5WeChat.h; sourceTree = "<group>"; };
 		2A33986E2B155BC400EA56A4 /* WeChatProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeChatProvider.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				2A33986E2B155BC400EA56A4 /* WeChatProvider.swift */,
+				2A02687C2C86124600510BB6 /* WechatOpenSDK.h */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -95,6 +98,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A3398242B154AAD00EA56A4 /* Reach5WeChat.h in Headers */,
+				2A02687D2C86124600510BB6 /* WechatOpenSDK.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

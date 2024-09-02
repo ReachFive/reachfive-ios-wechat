@@ -2,7 +2,8 @@ import Foundation
 import UIKit
 import Reach5
 import BrightFutures
-import WechatSwiftPod
+import UIKit
+//import WechatSwiftPod
 
 public class WeChatProvider: ProviderCreator {
     public static var NAME: String = "wechat"
@@ -106,7 +107,7 @@ public class ConfiguredWeChatProvider: NSObject, Provider {
 }
 
 extension ConfiguredWeChatProvider: WXApiDelegate {
-    open func onResp(_ resp: BaseResp) {
+    public func onResp(_ resp: BaseResp) {
         if let authResp = resp as? SendAuthResp {
             guard let code = authResp.code else {
                 self.promise.failure(.TechnicalError(reason: "No code delivered by WeChat"))
