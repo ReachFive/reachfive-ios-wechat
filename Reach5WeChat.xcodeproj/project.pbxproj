@@ -7,19 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2A3398242B154AAD00EA56A4 /* IdentitySdkWeChat.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A3398232B154AAD00EA56A4 /* IdentitySdkWeChat.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2A3398242B154AAD00EA56A4 /* Reach5WeChat.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A3398232B154AAD00EA56A4 /* Reach5WeChat.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2A33986F2B155BC400EA56A4 /* WeChatProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A33986E2B155BC400EA56A4 /* WeChatProvider.swift */; };
-		B0DB5B5F105FE5D066BC6D4B /* Pods_IdentitySdkWeChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1E8211B6459285F08D438E3 /* Pods_IdentitySdkWeChat.framework */; };
+		5B98471E02F228425FA8F5D1 /* Pods_Reach5WeChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E691F2ADDE00880FB548BC3 /* Pods_Reach5WeChat.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2A3398202B154AAD00EA56A4 /* IdentitySdkWeChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IdentitySdkWeChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2A3398232B154AAD00EA56A4 /* IdentitySdkWeChat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IdentitySdkWeChat.h; sourceTree = "<group>"; };
+		2A3398202B154AAD00EA56A4 /* Reach5WeChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Reach5WeChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A3398232B154AAD00EA56A4 /* Reach5WeChat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Reach5WeChat.h; sourceTree = "<group>"; };
 		2A33986E2B155BC400EA56A4 /* WeChatProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeChatProvider.swift; sourceTree = "<group>"; };
 		2AA7C7992BB74C6500BEA7EA /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
-		92469EAE495FB425F4ECD3EC /* Pods-IdentitySdkWeChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IdentitySdkWeChat.release.xcconfig"; path = "Target Support Files/Pods-IdentitySdkWeChat/Pods-IdentitySdkWeChat.release.xcconfig"; sourceTree = "<group>"; };
-		C1E8211B6459285F08D438E3 /* Pods_IdentitySdkWeChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IdentitySdkWeChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F18E32DEB4E4B4A62E5D5561 /* Pods-IdentitySdkWeChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IdentitySdkWeChat.debug.xcconfig"; path = "Target Support Files/Pods-IdentitySdkWeChat/Pods-IdentitySdkWeChat.debug.xcconfig"; sourceTree = "<group>"; };
+		3E691F2ADDE00880FB548BC3 /* Pods_Reach5WeChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Reach5WeChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CD9F0D1A18C6BC314DD8D0A /* Pods-Reach5WeChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reach5WeChat.release.xcconfig"; path = "Target Support Files/Pods-Reach5WeChat/Pods-Reach5WeChat.release.xcconfig"; sourceTree = "<group>"; };
+		CEDDFA0349DB58B0C15E62DE /* Pods-Reach5WeChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reach5WeChat.debug.xcconfig"; path = "Target Support Files/Pods-Reach5WeChat/Pods-Reach5WeChat.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,7 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0DB5B5F105FE5D066BC6D4B /* Pods_IdentitySdkWeChat.framework in Frameworks */,
+				5B98471E02F228425FA8F5D1 /* Pods_Reach5WeChat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,7 +37,7 @@
 		2A3398162B154AAD00EA56A4 = {
 			isa = PBXGroup;
 			children = (
-				2A3398222B154AAD00EA56A4 /* IdentitySdkWeChat */,
+				2A3398222B154AAD00EA56A4 /* Sources */,
 				2A3398212B154AAD00EA56A4 /* Products */,
 				5038865880CA0BBA85D4F6B2 /* Pods */,
 				A447F7B43FF43974D83DF715 /* Frameworks */,
@@ -47,19 +47,19 @@
 		2A3398212B154AAD00EA56A4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2A3398202B154AAD00EA56A4 /* IdentitySdkWeChat.framework */,
+				2A3398202B154AAD00EA56A4 /* Reach5WeChat.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2A3398222B154AAD00EA56A4 /* IdentitySdkWeChat */ = {
+		2A3398222B154AAD00EA56A4 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				2A3398232B154AAD00EA56A4 /* IdentitySdkWeChat.h */,
+				2A3398232B154AAD00EA56A4 /* Reach5WeChat.h */,
 				2AA7C7992BB74C6500BEA7EA /* PrivacyInfo.xcprivacy */,
 				2A33986D2B155B9A00EA56A4 /* Classes */,
 			);
-			path = IdentitySdkWeChat;
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		2A33986D2B155B9A00EA56A4 /* Classes */ = {
@@ -73,8 +73,8 @@
 		5038865880CA0BBA85D4F6B2 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				F18E32DEB4E4B4A62E5D5561 /* Pods-IdentitySdkWeChat.debug.xcconfig */,
-				92469EAE495FB425F4ECD3EC /* Pods-IdentitySdkWeChat.release.xcconfig */,
+				CEDDFA0349DB58B0C15E62DE /* Pods-Reach5WeChat.debug.xcconfig */,
+				6CD9F0D1A18C6BC314DD8D0A /* Pods-Reach5WeChat.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -82,7 +82,7 @@
 		A447F7B43FF43974D83DF715 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C1E8211B6459285F08D438E3 /* Pods_IdentitySdkWeChat.framework */,
+				3E691F2ADDE00880FB548BC3 /* Pods_Reach5WeChat.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -94,30 +94,31 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A3398242B154AAD00EA56A4 /* IdentitySdkWeChat.h in Headers */,
+				2A3398242B154AAD00EA56A4 /* Reach5WeChat.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		2A33981F2B154AAD00EA56A4 /* IdentitySdkWeChat */ = {
+		2A33981F2B154AAD00EA56A4 /* Reach5WeChat */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2A3398272B154AAD00EA56A4 /* Build configuration list for PBXNativeTarget "IdentitySdkWeChat" */;
+			buildConfigurationList = 2A3398272B154AAD00EA56A4 /* Build configuration list for PBXNativeTarget "Reach5WeChat" */;
 			buildPhases = (
 				FAE350AE197B75A629B34ACD /* [CP] Check Pods Manifest.lock */,
 				2A33981B2B154AAD00EA56A4 /* Headers */,
 				2A33981C2B154AAD00EA56A4 /* Sources */,
 				2A33981D2B154AAD00EA56A4 /* Frameworks */,
 				2A33981E2B154AAD00EA56A4 /* Resources */,
+				794B4260148596DF0702801D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = IdentitySdkWeChat;
-			productName = IdentitySdkWeChat;
-			productReference = 2A3398202B154AAD00EA56A4 /* IdentitySdkWeChat.framework */;
+			name = Reach5WeChat;
+			productName = Reach5WeChat;
+			productReference = 2A3398202B154AAD00EA56A4 /* Reach5WeChat.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -135,7 +136,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2A33981A2B154AAD00EA56A4 /* Build configuration list for PBXProject "IdentitySdkWeChat" */;
+			buildConfigurationList = 2A33981A2B154AAD00EA56A4 /* Build configuration list for PBXProject "Reach5WeChat" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -148,7 +149,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2A33981F2B154AAD00EA56A4 /* IdentitySdkWeChat */,
+				2A33981F2B154AAD00EA56A4 /* Reach5WeChat */,
 			);
 		};
 /* End PBXProject section */
@@ -164,6 +165,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		794B4260148596DF0702801D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Reach5WeChat/Pods-Reach5WeChat-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Reach5WeChat/Pods-Reach5WeChat-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Reach5WeChat/Pods-Reach5WeChat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		FAE350AE197B75A629B34ACD /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -179,7 +197,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-IdentitySdkWeChat-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Reach5WeChat-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -327,7 +345,7 @@
 		};
 		2A3398282B154AAD00EA56A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F18E32DEB4E4B4A62E5D5561 /* Pods-IdentitySdkWeChat.debug.xcconfig */;
+			baseConfigurationReference = CEDDFA0349DB58B0C15E62DE /* Pods-Reach5WeChat.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -350,7 +368,7 @@
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
-				PRODUCT_BUNDLE_IDENTIFIER = com.reach5.IdentitySdkWeChat;
+				PRODUCT_BUNDLE_IDENTIFIER = com.reach5.Reach5WeChat;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -362,7 +380,7 @@
 		};
 		2A3398292B154AAD00EA56A4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 92469EAE495FB425F4ECD3EC /* Pods-IdentitySdkWeChat.release.xcconfig */;
+			baseConfigurationReference = 6CD9F0D1A18C6BC314DD8D0A /* Pods-Reach5WeChat.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -385,7 +403,7 @@
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
-				PRODUCT_BUNDLE_IDENTIFIER = com.reach5.IdentitySdkWeChat;
+				PRODUCT_BUNDLE_IDENTIFIER = com.reach5.Reach5WeChat;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -397,7 +415,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2A33981A2B154AAD00EA56A4 /* Build configuration list for PBXProject "IdentitySdkWeChat" */ = {
+		2A33981A2B154AAD00EA56A4 /* Build configuration list for PBXProject "Reach5WeChat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2A3398252B154AAD00EA56A4 /* Debug */,
@@ -406,7 +424,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2A3398272B154AAD00EA56A4 /* Build configuration list for PBXNativeTarget "IdentitySdkWeChat" */ = {
+		2A3398272B154AAD00EA56A4 /* Build configuration list for PBXNativeTarget "Reach5WeChat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2A3398282B154AAD00EA56A4 /* Debug */,

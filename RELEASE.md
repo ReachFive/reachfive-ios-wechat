@@ -7,9 +7,9 @@
 $VERSION = 'x.x.x'
 ```
 
-3. Run `./update.sh` to update the dependencies
+3. Run `pod update` to update the dependencies
 ```shell
-./update.sh
+pod update
 ```
 
 4. Update the `CHANGELOG.md` file
@@ -28,4 +28,4 @@ git push origin x.x.x
 
 7. The CI will automatically publish this new version
 
-8. Finally, draft a new release in the [Github releases tab](https://github.com/ReachFive/identity-ios-sdk/releases) (copy & paste the changelog in the release's description).
+8. Finally, draft a new release in the [Github releases tab](https://github.com/ReachFive/reachfive-ios-wechat/releases) (copy & paste the changelog in the release's description).

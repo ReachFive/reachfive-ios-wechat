@@ -1,11 +1,11 @@
 require_relative './version'
 
 Pod::Spec.new do |spec|
-  spec.name                  = "IdentitySdkWeChat"
+  spec.name                  = "Reach5WeChat"
   spec.version               = $VERSION
-  spec.summary               = "ReachFive IdentitySdkWeChat"
+  spec.summary               = "Reachfive Identity SDK for WeChat Login"
   spec.description           = <<-DESC
-      ReachFive Identity Sdk WeChat
+      Reachfive Identity SDK for iOS integrating with WeChat Login
   DESC
   spec.homepage              = "https://github.com/ReachFive/reachfive-ios-wechat"
   spec.license               = { :type => "MIT", :file => "LICENSE" }
@@ -13,13 +13,16 @@ Pod::Spec.new do |spec|
   spec.authors               = { "François" => "francois.devemy@reach5.co", "Pierre" => "pierre.bar@reach5.co" }
   spec.swift_versions        = ["5"]
   spec.source                = { :git => "https://github.com/ReachFive/reachfive-ios-wechat.git", :tag => "#{spec.version}" }
-  spec.source_files          = "IdentitySdkWeChat/**/*.*"
+  spec.source_files          = "Sources/Classes/**/*.*"
   spec.platform              = :ios
   spec.ios.deployment_target = $IOS_DEPLOYMENT_TARGET
+  spec.resource_bundle = {
+    'Reach5WeChat' => ['Sources/PrivacyInfo.xcprivacy']
+  }
 
   spec.static_framework = true
 
-  spec.dependency 'IdentitySdkCore'
+  spec.dependency 'Reach5'
   spec.dependency 'WechatSwiftPod', '~> 1'
 
 end
